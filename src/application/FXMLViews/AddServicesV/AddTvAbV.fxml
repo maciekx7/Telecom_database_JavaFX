@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.TvAb.AddTvAbC">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="619.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/abonamentBack.jpg" />
+            </image>
+        </ImageView>
+        <HBox layoutX="234.0" layoutY="86.0" prefHeight="183.0" prefWidth="324.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="171.0" prefWidth="179.0" spacing="8.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="74.0" text="Nazwa" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="164.0" text="Liczba kanałów" textAlignment="RIGHT" textFill="#f5f5f5">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="147.0" text="Nagrywarka" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="192.0" text="MultiRoom" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="124.0" text="Hbo GO" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="124.0" text="Netflix" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+            <VBox prefHeight="188.0" prefWidth="142.0" spacing="8.0">
+               <children>
+                  <TextField fx:id="name" prefHeight="30.0" />
+                  <TextField fx:id="channels" prefHeight="30.0" />
+                  <ChoiceBox fx:id="recorder" prefHeight="30.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="multiroom" prefHeight="30.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="hbo" prefHeight="30.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="netflix" prefHeight="30.0" prefWidth="141.0" />
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="7.0" layoutY="292.0" prefHeight="107.0" prefWidth="213.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Cena miesięczna" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Liczba rat" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+                <VBox prefHeight="93.0" prefWidth="79.0" spacing="5.0">
+                    <children>
+                        <TextField fx:id="cena_miesieczna" />
+                        <TextField fx:id="liczba_rat" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Button fx:id="backButton" layoutX="433.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="118.0" text="Powrót" />
+        <Button fx:id="applyButton" layoutX="278.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="118.0" text="Zatwierdź" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="34.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: black;">
+            <image>
+                <Image url="@../../../Graphics/tv.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="183.0" layoutY="29.0" prefHeight="32.0" prefWidth="257.0" text="Abonament telewizyjny" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#2bd03c" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

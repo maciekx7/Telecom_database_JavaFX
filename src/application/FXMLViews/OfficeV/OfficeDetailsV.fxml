@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="605.0" prefWidth="817.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Office.OfficeDetailsC">
+    <children>
+        <ImageView fitHeight="605.0" fitWidth="817.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../../Graphics/userDetailsBack.jpg" />
+            </image>
+        </ImageView>
+        <HBox layoutX="357.0" layoutY="252.0" prefHeight="88.0" prefWidth="396.0">
+            <children>
+                <VBox prefHeight="145.0" prefWidth="186.0" spacing="2.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="76.0" text="Miasto:" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="65.0" text="Ulica:" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font></Label>
+                        <Label prefHeight="30.0" prefWidth="130.0" text="Numer ulicy:" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="122.0" prefWidth="289.0" spacing="2.0">
+                    <children>
+                        <Label fx:id="city" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="269.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font></Label>
+                        <Label fx:id="street" alignment="CENTER" prefHeight="30.0" prefWidth="268.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font></Label>
+                        <Label fx:id="streenNr" alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font></Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="21.0" layoutY="88.0" prefHeight="114.0" prefWidth="545.0">
+            <children>
+                <VBox prefHeight="221.0" prefWidth="161.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="164.0" text="Nazwa biura" textAlignment="RIGHT" textFill="#f5f5f5">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="163.0" text="Specjalizacja" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="114.0" prefWidth="384.0">
+                    <children>
+                        <Label fx:id="name" alignment="CENTER" prefHeight="30.0" prefWidth="383.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="specialization" alignment="CENTER" prefHeight="30.0" prefWidth="386.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Label layoutX="335.0" layoutY="28.0" prefHeight="40.0" prefWidth="217.0" text="Szczegóły biura" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#ba6880" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <ImageView fitHeight="114.0" fitWidth="123.0" layoutX="177.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/house.gif" />
+            </image>
+        </ImageView>
+        <Button fx:id="back" layoutX="666.0" layoutY="513.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="76.0" text="powrót">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+        <HBox layoutX="26.0" layoutY="393.0" prefHeight="94.0" prefWidth="417.0">
+            <children>
+                <VBox prefHeight="100.0" prefWidth="150.0">
+                    <children>
+                        <Label prefHeight="30.0" text="nr. telefonu" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" text="Email" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="74.0" prefWidth="279.0">
+                    <children>
+                        <Label fx:id="phone" alignment="CENTER" prefHeight="30.0" prefWidth="271.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="email" alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <ImageView fitHeight="106.0" fitWidth="141.0" layoutX="418.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/greenPhone.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="77.0" layoutY="236.0" prefHeight="32.0" prefWidth="250.0" text="Lokalizacja" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#e8b51c" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="569.0" layoutY="369.0" prefHeight="32.0" prefWidth="180.0" text="Dane kontaktowe" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#33cd11" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <ImageView fitHeight="98.0" fitWidth="123.0" layoutX="461.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/office.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="554.0" layoutY="113.0" prefHeight="32.0" prefWidth="211.0" text="Inforamcje podstawowe" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="1.0">
+                    <stops>
+                        <Stop color="#eb590b" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Button fx:id="employeButton" layoutX="191.0" layoutY="500.0" mnemonicParsing="false" prefHeight="68.0" prefWidth="144.0" text="Pracownicy">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="59.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/avatar.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="605.0" prefWidth="817.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Perspective.Client.ClientInfoC">
+   <children>
+      <ImageView fitHeight="605.0" fitWidth="817.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/userDetailsBack.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="356.0" layoutY="286.0" prefHeight="145.0" prefWidth="397.0">
+         <children>
+            <VBox prefHeight="145.0" prefWidth="186.0" spacing="2.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="76.0" text="Miasto:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="65.0" text="Ulica:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font></Label>
+                  <Label prefHeight="30.0" prefWidth="130.0" text="Numer ulicy:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="141.0" text="Numer lokalu:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="122.0" prefWidth="289.0" spacing="2.0">
+               <children>
+                  <Label fx:id="city" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="269.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="street" alignment="CENTER" prefHeight="30.0" prefWidth="268.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="streenNr" alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="buildingNr" alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="21.0" layoutY="88.0" prefHeight="162.0" prefWidth="457.0">
+         <children>
+            <VBox prefHeight="221.0" prefWidth="161.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="71.0" text="Imię:" textAlignment="RIGHT" textFill="#f5f5f5">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="123.0" text="Nazwisko:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="92.0" text="PESEL:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="169.0" text="Data urodzenia:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="95.0" text="Płeć:" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="221.0" prefWidth="296.0">
+               <children>
+                  <Label fx:id="name" alignment="CENTER" prefHeight="30.0" prefWidth="283.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastName" alignment="CENTER" prefHeight="30.0" prefWidth="284.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pesel" alignment="CENTER" prefHeight="30.0" prefWidth="282.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="birth" alignment="CENTER" prefHeight="30.0" prefWidth="282.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="gender" alignment="CENTER" prefHeight="30.0" prefWidth="282.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label layoutX="237.0" layoutY="27.0" prefHeight="40.0" prefWidth="362.0" text="Szczegóły twojego konta" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ba6880" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="528.0" layoutY="130.0" prefHeight="32.0" prefWidth="198.0" text="Informacje personalne" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#2b93a8" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="428.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/avatar.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="edit" layoutX="704.0" layoutY="27.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="55.0" text="Edycja">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="back" layoutX="667.0" layoutY="518.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="92.0" text="Powrót">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fitHeight="114.0" fitWidth="123.0" layoutX="156.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/house.gif" />
+         </image>
+      </ImageView>
+      <HBox layoutX="27.0" layoutY="456.0" prefHeight="74.0" prefWidth="413.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="150.0">
+               <children>
+                  <Label prefHeight="30.0" text="nr. telefonu" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="74.0" prefWidth="279.0">
+               <children>
+                  <Label fx:id="phone" alignment="CENTER" prefHeight="30.0" prefWidth="271.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="106.0" fitWidth="141.0" layoutX="428.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/greenPhone.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="27.0" layoutY="272.0" prefHeight="32.0" prefWidth="250.0" text="Dane korespondencyje" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#e8b51c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="541.0" layoutY="431.0" prefHeight="32.0" prefWidth="180.0" text="Dane kontaktowe" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#33cd11" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

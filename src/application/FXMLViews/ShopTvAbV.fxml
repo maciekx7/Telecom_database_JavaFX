@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.TvAb.ShopTvAbC">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="619.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../Graphics/abonamentBack.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: black;">
+            <image>
+                <Image url="@../../Graphics/tv.png" />
+            </image>
+        </ImageView>
+        <HBox layoutX="33.0" layoutY="336.0" prefHeight="67.0" prefWidth="225.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+                    <children>
+                        <Label alignment="CENTER" text="Cena miesięczna" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" text="Liczba rat" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+                <VBox prefHeight="104.0" prefWidth="99.0" spacing="5.0">
+                    <children>
+                        <Label fx:id="cena_miesieczna" alignment="CENTER" text="Label" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="liczba_rat" alignment="CENTER" text="Label" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="235.0" layoutY="168.0" prefHeight="150.0" prefWidth="338.0">
+            <children>
+                <VBox prefHeight="183.0" prefWidth="197.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="164.0" text="Nagrywarka" textAlignment="RIGHT" textFill="#f5f5f5">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="164.0" text="MultiRoom" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="192.0" text="HBO Go" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="124.0" text="Netflix" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+                <VBox prefHeight="183.0" prefWidth="117.0">
+                    <children>
+                        <Label fx:id="recorder" alignment="CENTER" prefHeight="30.0" prefWidth="114.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="multiroom" alignment="CENTER" lineSpacing="5.0" prefHeight="30.0" prefWidth="112.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hbo" alignment="CENTER" lineSpacing="5.0" prefHeight="30.0" prefWidth="111.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="netflix" alignment="CENTER" lineSpacing="5.0" prefHeight="30.0" prefWidth="111.0" text="Label" textFill="WHITE">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="SW_RESIZE" />
+                    </cursor>
+                </VBox>
+            </children>
+        </HBox>
+        <Label fx:id="name" alignment="CENTER" layoutX="221.0" layoutY="74.0" prefHeight="28.0" prefWidth="290.0" text="Twój stary UPC" textAlignment="CENTER" textFill="#37ae3b">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="173.0" layoutY="26.0" prefHeight="32.0" prefWidth="280.0" text="Abonament na urządzenie" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#2bd03c" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="229.0" layoutY="129.0" prefHeight="27.0" prefWidth="164.0" text="Liczba kanałów" textAlignment="RIGHT" textFill="#f5f5f5">
+            <font>
+                <Font name="Courier New Bold Italic" size="17.0" />
+            </font>
+        </Label>
+        <Label fx:id="channels" alignment="CENTER" layoutX="422.0" layoutY="128.0" prefHeight="30.0" prefWidth="114.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="Courier New Bold Italic" size="17.0" />
+            </font>
+        </Label>
+        <Button fx:id="backToMenu" layoutX="451.0" layoutY="350.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="powrót do sklepu" />
+      <Button fx:id="buy" layoutX="271.0" layoutY="351.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Kup!" />
+    </children>
+</AnchorPane>

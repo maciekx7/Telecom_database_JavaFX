@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.LandlineNet.AddLandlineAbC">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="619.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/abonamentBack.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="184.0" fitWidth="168.0" layoutX="22.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/landlineNet.png" />
+            </image>
+        </ImageView>
+        <HBox layoutX="227.0" layoutY="114.0" prefHeight="141.0" prefWidth="324.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="223.0" prefWidth="168.0" spacing="8.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="74.0" text="Nazwa" textFill="#cdcaca">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="123.0" text="Downlink" textFill="#cdcaca">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="139.0" text="Uplink" textAlignment="RIGHT" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="Technologia" textAlignment="RIGHT" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+                <VBox prefHeight="223.0" prefWidth="135.0" spacing="8.0">
+                    <children>
+                        <TextField fx:id="name" prefHeight="30.0" />
+                        <ChoiceBox fx:id="downlink" prefHeight="30.0" prefWidth="145.0" />
+                  <TextField fx:id="uplink" alignment="TOP_CENTER" editable="false" prefHeight="30.0" text="1/10 downlinku" />
+                  <ChoiceBox fx:id="cabel" prefHeight="30.0" prefWidth="159.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="7.0" layoutY="289.0" prefHeight="87.0" prefWidth="213.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Cena miesięczna" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Liczba rat" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+                <VBox prefHeight="93.0" prefWidth="79.0" spacing="5.0">
+                    <children>
+                        <TextField fx:id="cena_miesieczna" />
+                        <TextField fx:id="liczba_rat" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <Button fx:id="backButton" layoutX="434.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="109.0" text="Powrót" />
+        <Button fx:id="applyButton" layoutX="282.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="117.0" text="Dodaj" />
+        <Label layoutX="140.0" layoutY="39.0" prefHeight="32.0" prefWidth="365.0" text="Abonament na Internet stacjonrny" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#007aff" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>

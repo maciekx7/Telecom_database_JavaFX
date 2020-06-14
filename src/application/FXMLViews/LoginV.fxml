@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="493.0" maxWidth="405.0" minHeight="493.0" minWidth="405.0" onKeyTyped="#handleKeyPressed" prefHeight="493.0" prefWidth="405.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.LoginVController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="405.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../Graphics/userBack2.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="71.0" prefHeight="67.0" prefWidth="219.0" text="Sign In" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5611111111111111" centerY="0.5" radius="0.7558139534883721">
+               <stops>
+                  <Stop color="#007bff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="email" alignment="CENTER" layoutX="94.0" layoutY="172.0" prefHeight="43.0" prefWidth="200.0" promptText="type your email" style="-fx-background-radius: 20;" />
+      <PasswordField fx:id="password" alignment="CENTER" layoutX="95.0" layoutY="239.0" prefHeight="43.0" prefWidth="200.0" promptText="type your password" style="-fx-background-radius: 20;" />
+      <Button fx:id="loginB" layoutX="78.0" layoutY="319.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="232.0" style="-fx-background-radius: 10;" text="login">
+         <textFill>
+            <RadialGradient centerX="0.5611111111111111" centerY="0.5" radius="1.0">
+               <stops>
+                  <Stop color="#10a43a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

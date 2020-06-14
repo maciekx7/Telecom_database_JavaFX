@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="488.0" maxWidth="405.0" minHeight="488.0" minWidth="405.0" prefHeight="488.0" prefWidth="405.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Perspective.Client.ClientBasicC">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/userBack2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="148.0" layoutX="128.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/avatar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" alignment="CENTER" layoutX="75.0" layoutY="187.0" prefHeight="29.0" prefWidth="256.0" style="-fx-background-color: silver; -fx-background-radius: 10;" text="Andrzer Duda" textFill="#296c79">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumber" alignment="CENTER" layoutX="99.0" layoutY="239.0" prefHeight="29.0" prefWidth="209.0" style="-fx-background-color: silver; -fx-background-radius: 10;" text="732 565 865" textFill="#15685e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="37.0" layoutY="400.0" prefHeight="54.0" prefWidth="334.0">
+         <children>
+            <VBox prefHeight="54.0" prefWidth="263.0" spacing="3.0">
+               <children>
+                  <Label prefHeight="19.0" prefWidth="127.0" text="Liczba usług" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="237.0" text="Miesięczny rachunek " textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="127.0" spacing="3.0">
+               <children>
+                  <Label fx:id="servicesCount" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="101.0" style="-fx-background-radius: 20;" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="servicesPrice" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="99.0" style="-fx-background-radius: 20;" text="339" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="details" layoutX="38.0" layoutY="312.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Szczególy" textFill="#3e9e14">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="servicesInfo" layoutX="268.0" layoutY="312.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Twoje usługi" textFill="#ae16ae">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="shop" layoutX="153.0" layoutY="311.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Zakupy" textFill="#bf6715">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="309.0" layoutY="26.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="72.0" text="Wyloguj" textFill="RED">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

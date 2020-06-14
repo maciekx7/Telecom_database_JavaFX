@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.DeviceAb.EditDeviceAbC">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="622.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/abonamentBack.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="160.0" layoutY="25.0" prefHeight="32.0" prefWidth="280.0" text="Abonament na urządzenie" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="0.9418604651162791">
+                    <stops>
+                        <Stop color="#9e1c99" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <ImageView fitHeight="187.0" fitWidth="125.0" layoutX="24.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../Graphics/device.png" />
+            </image>
+        </ImageView>
+        <HBox layoutX="239.0" layoutY="68.0" prefHeight="171.0" prefWidth="324.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="223.0" prefWidth="168.0" spacing="8.0">
+                    <children>
+                  <Label prefHeight="30.0" prefWidth="74.0" text="Marka" textFill="#cdcaca">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="78.0" text="Model" textFill="#cdcaca">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                        <Label prefHeight="30.0" prefWidth="139.0" text="Aparat" textAlignment="RIGHT" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="123.0" text="Indukcja" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="153.0" text="Rozmiar ekranu" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="124.0" text="Port" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="77.0" text="Jack" textFill="#d5d5da">
+                            <font>
+                                <Font name="Courier New Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+            <VBox prefHeight="223.0" prefWidth="135.0" spacing="8.0">
+               <children>
+                  <ChoiceBox fx:id="mark" prefWidth="150.0" />
+                  <TextField fx:id="model" prefHeight="30.0" />
+                  <TextField fx:id="camera" prefHeight="30.0" />
+                  <ChoiceBox fx:id="induction" prefHeight="30.0" prefWidth="150.0" />
+                  <TextField fx:id="size" prefHeight="30.0" />
+                  <ChoiceBox fx:id="port" prefHeight="30.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="jack" prefHeight="30.0" prefWidth="150.0" />
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+        <HBox layoutX="7.0" layoutY="269.0" prefHeight="107.0" prefWidth="213.0" spacing="5.0">
+            <children>
+                <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+                    <children>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Cena początkowa" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Cena miesięczna" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="25.0" text="Liczba rat" textFill="#d5d5da">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </VBox>
+            <VBox prefHeight="93.0" prefWidth="79.0" spacing="5.0">
+               <children>
+                  <TextField fx:id="cena_wejsciowa" />
+                  <TextField fx:id="cena_miesieczna" />
+                  <TextField fx:id="liczba_rat" />
+               </children>
+            </VBox>
+            </children>
+        </HBox>
+        <Button fx:id="backButton" layoutX="418.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Powrót" />
+      <Button fx:id="applyButton" layoutX="268.0" layoutY="338.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Zatwierdź" />
+      <Button fx:id="deleteButton" layoutX="546.0" layoutY="14.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="52.0" text="Usuń" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

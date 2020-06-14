@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="405.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Perspective.Employee.EmployeeBasicC">
+   <children>
+      <ImageView fitHeight="523.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/userBack2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="171.0" fitWidth="148.0" layoutX="128.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Graphics/avatar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" alignment="CENTER" layoutX="75.0" layoutY="187.0" prefHeight="29.0" prefWidth="256.0" style="-fx-background-color: silver; -fx-background-radius: 10;" text="Andrzer Duda" textFill="#296c79">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="phoneNumber" alignment="CENTER" layoutX="99.0" layoutY="239.0" prefHeight="29.0" prefWidth="209.0" style="-fx-background-color: silver; -fx-background-radius: 10;" text="732 565 865" textFill="#15685e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="37.0" layoutY="400.0" prefHeight="54.0" prefWidth="334.0">
+         <children>
+            <VBox prefHeight="54.0" prefWidth="133.0" spacing="3.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="160.0" text="Twoje biuro" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="237.0" text="Stanowisko" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="54.0" prefWidth="202.0" spacing="3.0">
+               <children>
+                  <Label fx:id="office" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="201.0" style="-fx-background-radius: 20;" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="position" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="204.0" style="-fx-background-radius: 20;" text="label" textFill="WHITE">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="details" layoutX="37.0" layoutY="312.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Szczególy" textFill="#3e9e14">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="services" layoutX="276.0" layoutY="312.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="99.0" text="Usługi" textFill="#ae16ae">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="310.0" layoutY="26.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Wyloguj" textFill="RED">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="salary" layoutX="146.0" layoutY="312.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="117.0" text="Wynagrodzenia" textFill="#0019d7">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

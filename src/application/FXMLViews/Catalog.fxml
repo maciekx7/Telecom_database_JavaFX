@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="431.0" maxWidth="619.0" minHeight="431.0" minWidth="619.0" prefHeight="431.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Shop.CatalogC">
+    <children>
+        <ImageView fitHeight="431.0" fitWidth="619.0" layoutY="9.0" pickOnBounds="true" style="-fx-background-color: black;">
+            <image>
+                <Image url="@../../Graphics/abonamentBack.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="back" layoutX="232.0" layoutY="357.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="162.0" text="Powrót" />
+        <TabPane layoutY="-3.0" prefHeight="360.0" prefWidth="619.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Sprzęt">
+                    <content>
+                        <AnchorPane maxHeight="331.0" maxWidth="619.0" minHeight="331.0" minWidth="619.0" prefHeight="331.0" prefWidth="619.0">
+                            <children>
+                                <TableView fx:id="DevTab" layoutX="44.0" layoutY="55.0" maxHeight="230.0" maxWidth="538.0" minHeight="230.0" minWidth="538.0" prefHeight="230.0" prefWidth="538.0" style="-fx-background-color: silver;">
+                                    <columns>
+                                        <TableColumn fx:id="DevMark" prefWidth="76.0" text="Marka" />
+                                        <TableColumn fx:id="DevModel" prefWidth="79.0" text="Model" />
+                                        <TableColumn fx:id="DevScreen" prefWidth="50.0" text="Ekran" />
+                                        <TableColumn fx:id="DevStartPrice" prefWidth="86.0" text="Cena na start" />
+                                        <TableColumn fx:id="DevPrice" prefWidth="112.0" text="Cena miesięczna" />
+                                        <TableColumn fx:id="DevDuration" prefWidth="134.0" text="Okres zobowiązania" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="DevSearch" alignment="CENTER" layoutX="111.0" layoutY="21.0" prefHeight="25.0" prefWidth="404.0" promptText="Wyszukaj" />
+                        <Button fx:id="addDevice" layoutX="450.0" layoutY="295.0" mnemonicParsing="false" text="dodaj usługe" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Telewizja">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="600.0">
+                            <children>
+                                <TableView fx:id="TvTab" layoutX="44.0" layoutY="55.0" maxHeight="230.0" maxWidth="538.0" minHeight="230.0" minWidth="538.0" prefHeight="230.0" prefWidth="538.0" style="-fx-background-color: silver;">
+                                    <columns>
+                                        <TableColumn fx:id="TvName" prefWidth="144.0" text="Nazwa" />
+                                        <TableColumn fx:id="TvCanals" prefWidth="100.0" text="liczba kanałów" />
+                                        <TableColumn fx:id="TvMultiroom" minWidth="0.0" prefWidth="82.0" text="multiroom" />
+                                        <TableColumn fx:id="TvPrice" minWidth="0.0" prefWidth="79.0" text="cena" />
+                                        <TableColumn fx:id="TvDuration" prefWidth="132.0" text="okres zobowązania" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="TvSearch" alignment="CENTER" layoutX="111.0" layoutY="21.0" prefHeight="25.0" prefWidth="404.0" promptText="Wyszukaj" />
+                        <Button fx:id="addTv" layoutX="450.0" layoutY="295.0" mnemonicParsing="false" text="dodaj usługe" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Internet Mobilny">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="600.0">
+                            <children>
+                                <TableView fx:id="MobNetTab" layoutX="44.0" layoutY="55.0" maxHeight="230.0" maxWidth="538.0" minHeight="230.0" minWidth="538.0" prefHeight="230.0" prefWidth="538.0" style="-fx-background-color: silver;">
+                                    <columns>
+                                        <TableColumn fx:id="MobNetName" prefWidth="146.0" text="Nazwa" />
+                                        <TableColumn fx:id="MobNetGB" prefWidth="99.0" text="Pakiet danych" />
+                                        <TableColumn fx:id="MobNetHappy" prefWidth="124.0" text="Szczęśliwe godziny" />
+                                        <TableColumn fx:id="MobNetPrice" prefWidth="48.0" text="Cena" />
+                                        <TableColumn fx:id="MobNetDuration" prefWidth="120.0" text="Okres zobowiązania" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="MobNetSearch" alignment="CENTER" layoutX="111.0" layoutY="21.0" prefHeight="25.0" prefWidth="404.0" promptText="Wyszukaj" />
+                        <Button fx:id="addMobileNet" layoutX="450.0" layoutY="295.0" mnemonicParsing="false" text="dodaj usługe" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="addLandlineNet" text="Internet Stacjonarny">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="LandlineNetTab" layoutX="44.0" layoutY="55.0" maxHeight="230.0" maxWidth="538.0" minHeight="230.0" minWidth="538.0" prefHeight="230.0" prefWidth="538.0" style="-fx-background-color: silver;">
+                                    <columns>
+                                        <TableColumn fx:id="LandlineNetName" prefWidth="160.0" text="Nazwa" />
+                                        <TableColumn fx:id="LandlineNetSpped" prefWidth="73.0" text="Prędkość" />
+                                        <TableColumn fx:id="LandlineNetCabel" prefWidth="119.0" text="Rodzaj połączenia" />
+                                        <TableColumn fx:id="LandlineNetPrice" prefWidth="56.0" text="cena" />
+                                        <TableColumn fx:id="LandlineNetDuration" prefWidth="129.0" text="Okres zobowiązania" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="LandlineNetSearch" alignment="CENTER" layoutX="111.0" layoutY="21.0" prefHeight="25.0" prefWidth="404.0" promptText="Wyszukaj" />
+                        <Button fx:id="AddLandlineNet" layoutX="450.0" layoutY="295.0" mnemonicParsing="false" text="dodaj usługe" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="PhAbB" text="Abonament Komorkowy">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="600.0">
+                            <children>
+                                <TableView fx:id="PhAbTab" layoutX="44.0" layoutY="55.0" maxHeight="230.0" maxWidth="538.0" minHeight="230.0" minWidth="538.0" prefHeight="230.0" prefWidth="538.0" style="-fx-background-color: silver;">
+                                    <columns>
+                                        <TableColumn fx:id="PhAbName" prefWidth="215.0" text="Nazwa" />
+                                        <TableColumn fx:id="PhAbGb" prefWidth="92.0" text="Internet [GB]" />
+                                        <TableColumn fx:id="PhAbTalk" prefWidth="75.0" text="Rozmowy" />
+                                        <TableColumn fx:id="PhAbPrice" prefWidth="48.0" text="Cena" />
+                                        <TableColumn fx:id="PhAhDuration" prefWidth="107.0" text="Czas trwania" />
+                                    </columns>
+                                </TableView>
+                                <TextField fx:id="PhoneAbSearch" alignment="CENTER" layoutX="111.0" layoutY="21.0" prefHeight="25.0" prefWidth="404.0" promptText="Wyszukaj" />
+                        <Button fx:id="addPhone" layoutX="450.0" layoutY="295.0" mnemonicParsing="false" text="dodaj usługe" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.DeviceAb.DeviceAbC">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="619.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Graphics/abonamentBack.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="160.0" layoutY="25.0" prefHeight="32.0" prefWidth="280.0" text="Abonament na urządzenie" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.9418604651162791">
+               <stops>
+                  <Stop color="#9e1c99" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="187.0" fitWidth="125.0" layoutX="24.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Graphics/device.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="229.0" layoutY="115.0" prefHeight="171.0" prefWidth="332.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="171.0" prefWidth="178.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="Aparat" textAlignment="RIGHT" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="123.0" text="Indukcja" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="153.0" text="Rozmiar ekranu" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" prefHeight="30.0" prefWidth="124.0" text="Port" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="77.0" text="Jack" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+            </VBox>
+            <VBox prefHeight="171.0" prefWidth="147.0" spacing="8.0">
+               <children>
+                  <Label fx:id="camera" alignment="CENTER" prefHeight="30.0" prefWidth="171.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="induction" alignment="CENTER" prefHeight="30.0" prefWidth="144.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="size" alignment="CENTER" prefHeight="30.0" prefWidth="175.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="port" alignment="CENTER" prefHeight="21.0" prefWidth="152.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="jack" alignment="CENTER" prefHeight="33.0" prefWidth="147.0" text="Label" textAlignment="CENTER" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="marka_model" alignment="CENTER" layoutX="219.0" layoutY="68.0" prefHeight="32.0" prefWidth="280.0" text="Iphone X" textAlignment="CENTER" textFill="#dab2d9">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="14.0" layoutY="295.0" prefHeight="90.0" prefWidth="225.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+               <children>
+                  <Label alignment="CENTER" text="Cena początkowa" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="Cena miesięczna" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="Liczba rat" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="116.0" text="Ważna do" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+            </VBox>
+            <VBox prefHeight="104.0" prefWidth="99.0" spacing="5.0">
+               <children>
+                  <Label fx:id="cena_wejsciowa" alignment="CENTER" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cena_miesieczna" alignment="CENTER" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="liczba_rat" alignment="CENTER" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="endOfPeriod" prefWidth="96.0" text="Label" textFill="#cdcaca">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="backButton" layoutX="440.0" layoutY="343.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Powrót" />
+   </children>
+</AnchorPane>

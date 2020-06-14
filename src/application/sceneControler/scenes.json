@@ -1,0 +1,215 @@
+{
+  "scenes": [
+    {
+      "name": "services",
+      "fxmlFile": "ServicesV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "clientInfo",
+      "fxmlFile": "ClientV/ClientInfoV.fxml",
+      "width": 817,
+      "height": 605
+    },
+    {
+      "name": "clientBasicInfo",
+      "fxmlFile": "ClientV/ClientBasicV.fxml",
+      "width": 405,
+      "height": 488
+    },
+    {
+      "name": "clientEdit",
+      "fxmlFile": "ClientV/ClientEditV.fxml",
+      "width": 774,
+      "height": 571
+    },
+    {
+      "name": "DeviceAb",
+      "fxmlFile": "DeviceAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "landlineAb",
+      "fxmlFile": "landlineNet.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "MobileNetAb",
+      "fxmlFile": "MobileNetV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "PhoneAb",
+      "fxmlFile": "PhoneAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "TvAb",
+      "fxmlFile": "TvAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "login",
+      "fxmlFile": "LoginV.fxml",
+      "width": 405,
+      "height": 493
+    },
+    {
+      "name": "shop",
+      "fxmlFile": "ShopV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "ShopDeviceAb",
+      "fxmlFile": "ShopDeviceAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "shopMobileNet",
+      "fxmlFile": "ShopMobileNetV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "shopLandlineAb",
+      "fxmlFile": "ShopLandlineNetV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "shopTvAb",
+      "fxmlFile": "ShopTvAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "shopPhoneAb",
+      "fxmlFile": "ShopPhoneAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "employeeInfo",
+      "fxmlFile": "EmployeeV/EmployeeInfoV.fxml",
+      "width": 831,
+      "height": 678
+    },
+    {
+      "name": "employeeBasicInfo",
+      "fxmlFile": "EmployeeV/EmployeeBasicV.fxml",
+      "width": 405,
+      "height": 488
+    },
+    {
+      "name": "employeeEdit",
+      "fxmlFile": "EmployeeV/EmployeeEditV.fxml",
+      "width": 774,
+      "height": 571
+    },
+    {
+      "name": "EditDeviceAb",
+      "fxmlFile": "EditServicesV/EditDeviceAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "EditLandlineAb",
+      "fxmlFile": "EditServicesV/EditLandlineAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "EditMobileNetAb",
+      "fxmlFile": "EditServicesV/EditMobileNatAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "EditPhoneAb",
+      "fxmlFile": "EditServicesV/EditPhoneAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "EditTvAb",
+      "fxmlFile": "EditServicesV/EditTvAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "AddDeviceAb",
+      "fxmlFile": "AddServicesV/AddDeviceAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "AddLandlineAb",
+      "fxmlFile": "AddServicesV/AddLandlineAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "AddMobileNetAb",
+      "fxmlFile": "AddServicesV/AddMobileNetAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "AddPhoneAb",
+      "fxmlFile": "AddServicesV/AddPhoneAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "AddTvAb",
+      "fxmlFile": "AddServicesV/AddTvAbV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "OfficeDetails",
+      "fxmlFile": "OfficeV/OfficeDetailsV.fxml",
+      "width": 817,
+      "height": 605
+    },
+    {
+      "name": "OfficeStaff",
+      "fxmlFile": "OfficeV/OfficeStaffV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "Salary",
+      "fxmlFile": "SalaryV.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "Catalog",
+      "fxmlFile": "Catalog.fxml",
+      "width": 619,
+      "height": 431
+    },
+    {
+      "name": "EmployeeChangePassword",
+      "fxmlFile": "EmployeeV/EmployeePasswordChangeV.fxml",
+      "width": 619,
+      "height": 421
+    },
+    {
+      "name": "ClientChangePassword",
+      "fxmlFile": "ClientV/ClientPasswordChangeV.fxml",
+      "width": 619,
+      "height": 421
+    }
+
+
+  ]}

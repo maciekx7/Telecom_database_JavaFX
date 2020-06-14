@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="431.0" prefWidth="619.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewControllers.Services.LandlineNet.LandlineNetC">
+   <children>
+      <ImageView fitHeight="431.0" fitWidth="619.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Graphics/abonamentBack.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="137.0" layoutY="47.0" prefHeight="32.0" prefWidth="365.0" text="Abonament na Internet stacjonrny" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.4662921348314607" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#007aff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <ImageView fitHeight="183.0" fitWidth="139.0" layoutX="44.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: black;">
+         <image>
+            <Image url="@../../Graphics/landlineNet.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="245.0" layoutY="168.0" prefHeight="110.0" prefWidth="323.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="171.0" prefWidth="178.0" spacing="8.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="139.0" text="Downlink" textAlignment="RIGHT" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="30.0" prefWidth="123.0" text="Typ Kabla" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label text="Uplink" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font></Label>
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+            </VBox>
+            <VBox prefHeight="90.0" prefWidth="140.0" spacing="8.0">
+               <children>
+                  <Label fx:id="speed" alignment="CENTER" prefHeight="30.0" prefWidth="114.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="type" alignment="CENTER" prefHeight="30.0" prefWidth="112.0" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="uplink" alignment="CENTER" prefHeight="30.0" prefWidth="111.0" text="Label" textFill="#c9c9c9">
+                     <font>
+                        <Font name="Courier New Bold Italic" size="17.0" />
+                     </font></Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label fx:id="name" alignment="CENTER" layoutX="213.0" layoutY="114.0" prefHeight="32.0" prefWidth="323.0" text="Elka net" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <HBox layoutX="34.0" layoutY="315.0" prefHeight="90.0" prefWidth="225.0" spacing="5.0">
+         <children>
+            <VBox prefHeight="61.0" prefWidth="128.0" spacing="5.0">
+               <children>
+                  <Label alignment="CENTER" text="Cena miesięczna" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="Liczba rat" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" text="Kiedy koniec?" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <Blend />
+               </effect>
+            </VBox>
+            <VBox prefHeight="104.0" prefWidth="99.0" spacing="5.0">
+               <children>
+                  <Label fx:id="cena_miesieczna" alignment="CENTER" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="liczba_rat" alignment="CENTER" text="Label" textFill="#d5d5da">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="endOfPeriod" prefWidth="96.0" text="Label" textFill="#cdcaca">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="backToMenu" layoutX="446.0" layoutY="347.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" text="Powrót" />
+   </children>
+</AnchorPane>
